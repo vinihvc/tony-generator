@@ -38,3 +38,7 @@ yarn dev
 ```sh
 yarn build
 ```
+
+### TypeScript Support
+
+Head over to the [vite react-ts](https://github.com/vitejs/create-vite-app/tree/master/template-react-ts) template and just copy the needed files.
