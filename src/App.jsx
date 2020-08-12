@@ -13,10 +13,10 @@ const App = () => {
       <Nav />
       <Switch>
         <Route exact path="/">
-          <Home title="Home" />
+          <Home />
         </Route>
-        <Route path="/about" title="About">
-          <About title="About" />
+        <Route path="/about">
+          <About />
         </Route>
         <Route>
           <NotFound />
