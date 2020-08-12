@@ -1,6 +1,6 @@
 # Vite + React + Tailwind CSS starter
 
-Inspired from [vite-tailwind-starter](https://github.com/posva/vite-tailwind-starter)
+Inspired by [vite-tailwind-starter](https://github.com/posva/vite-tailwind-starter)
 
 ## Installation
 
