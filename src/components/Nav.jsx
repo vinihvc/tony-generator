@@ -11,10 +11,8 @@ const Nav = () => {
     { text: 'About', to: '/about' },
   ];
 
-  const activeClass =
-    'text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700';
-  const inactiveClass =
-    'text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700';
+  const activeClass = 'text-white bg-gray-900';
+  const inactiveClass = 'text-gray-300 hover:text-white hover:bg-gray-700';
 
   return (
     <nav className="bg-gray-800">
@@ -34,7 +32,7 @@ const Nav = () => {
                   <Link
                     key={link.text}
                     to={link.to}
-                    className={`block px-3 py-2 rounded-md text-sm font-medium ${
+                    className={`block px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:text-white focus:bg-gray-700 ${
                       location.pathname === link.to
                         ? activeClass
                         : inactiveClass
