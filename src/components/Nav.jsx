@@ -173,7 +173,7 @@ const Nav = () => {
             <Link
               key={link.text}
               to={link.to}
-              className={`block px-3 py-2 rounded-md text-sm font-medium ${
+              className={`block px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:text-white focus:bg-gray-700 ${
                 location.pathname === link.to ? activeClass : inactiveClass
               } ${i > 0 && 'mt-1'}`}
             >
