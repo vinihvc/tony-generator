@@ -1023,9 +1023,9 @@ es-module-lexer@^0.3.18:
   integrity sha512-jm/i7KdJtaMDle921xIsA/MQQOGuZ6goYxhlV+k+gQNI7FtP4N6jknrmJvj++3ODpiyFGwQ4PIstJfHJQJNc+g==
 
 esbuild@^0.6.10:
-  version "0.6.20"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.6.20.tgz#64f71790843daa71985c028a716885dadb6a5aca"
-  integrity sha512-TR7HxD+sDJ1P67Loc8UDlRMeBEiJMS5L4yVLsiCwE48TyHDP7CGfkDHZDr9BKIFTK+0fuk7w/St1/PzBXpBRlQ==
+  version "0.6.23"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.6.23.tgz#a926079c2340c40411cebe6e56337e7467ee9a9a"
+  integrity sha512-NOTbv2Te/u5lPqIkldkK9a4QHgiDVDuQNniMxfJfLIysXPy4enerS2fHx89qlhnIDAltC8F+pkob5okgZ+O0Kw==
 
 escalade@^3.0.2:
   version "3.0.2"
@@ -1644,10 +1644,15 @@ lodash.toarray@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.toarray/-/lodash.toarray-4.4.0.tgz#24c4bfcd6b2fba38bfd0594db1179d8e9b656561"
   integrity sha1-JMS/zWsvuji/0FlNsRedjptlZWE=
 
-lodash@^4.17.15, lodash@^4.17.19:
+lodash@^4.17.15:
   version "4.17.19"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
   integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+
+lodash@^4.17.19:
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 log-symbols@^3.0.0:
   version "3.0.0"
@@ -2248,9 +2253,9 @@ rollup-pluginutils@^2.8.2:
     estree-walker "^0.6.1"
 
 rollup@^2.20.0:
-  version "2.23.1"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.23.1.tgz#d458d28386dc7660c2e8a4978bea6f9494046c20"
-  integrity sha512-Heyl885+lyN/giQwxA8AYT2GY3U+gOlTqVLrMQYno8Z1X9lAOpfXPiKiZCyPc25e9BLJM3Zlh957dpTlO4pa8A==
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.25.0.tgz#5c69aa9a19b7ae2fd26520d790c01e7a46c9b6ea"
+  integrity sha512-S+OzytEaqcLugXAqesmJMb1Q16I6h1ps8F3AOX7yMZ1OkkuOATJH/x2lqJJtjQo2/d+0J4j62M2RbvgmxvOuCw==
   optionalDependencies:
     fsevents "~2.1.2"
 
@@ -2509,7 +2514,7 @@ vary@^1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-vite-plugin-react@^3.0.0:
+vite-plugin-react@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/vite-plugin-react/-/vite-plugin-react-3.0.2.tgz#df47a62d7745a95f728695125eed227147ba37b1"
   integrity sha512-W+OdAWuvSddOJDKbHMeyOihLGnMj8pxo7STH3ATn7FZ/3zvcsZKXSlDWmdRtodeMQJJ8odKlDCheVeTFsQJ/vg==
@@ -2517,7 +2522,7 @@ vite-plugin-react@^3.0.0:
     "@babel/core" "^7.9.6"
     react-refresh "^0.8.2"
 
-vite@^1.0.0-rc.1:
+vite@^1.0.0-rc.4:
   version "1.0.0-rc.4"
   resolved "https://registry.yarnpkg.com/vite/-/vite-1.0.0-rc.4.tgz#210106136861b231704e6381ac9eb1bcd655d4f0"
   integrity sha512-D9gpKKaE2U0YpIxNrSn+nlFPBT0sfg68Y1EReYW8YHMhbNFcxwS7RZIa1W/8Pq6yDfVRAhbOZNijv1mLG5pCEg==
