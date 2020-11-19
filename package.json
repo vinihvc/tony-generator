@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
-    "vite": "^1.0.0-rc.8",
+    "vite": "^1.0.0-rc.9",
     "vite-plugin-react": "^3.0.2"
   }
 }
