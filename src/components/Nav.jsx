@@ -22,17 +22,17 @@ const Nav = () => {
             <div className="flex-shrink-0">
               <img
                 className="h-8 w-8"
-                src="https://tailwindui.com/img/logos/workflow-mark-on-dark.svg"
+                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                 alt="Workflow logo"
               />
             </div>
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline">
+              <div className="ml-10 flex items-baseline space-x-4">
                 {links.map((link, i) => (
                   <Link
                     key={link.text}
                     to={link.to}
-                    className={`block px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:text-white focus:bg-gray-700 ${
+                    className={`px-3 py-2 rounded-md text-sm font-medium ${
                       location.pathname === link.to
                         ? activeClass
                         : inactiveClass
@@ -46,40 +46,25 @@ const Nav = () => {
           </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
-              <button
-                className="p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700"
-                aria-label="Notifications"
-              >
-                <svg
-                  className="h-6 w-6"
-                  stroke="currentColor"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                  />
-                </svg>
-              </button>
+            <button class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+              <span class="sr-only">View notifications</span>
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+            </button>
 
               {/* Profile dropdown */}
               <div className="ml-3 relative">
                 <div>
                   <button
-                    className="max-w-xs flex items-center text-sm rounded-full text-white focus:outline-none focus:shadow-solid"
+                    className="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                     id="user-menu"
                     aria-label="User menu"
                     aria-haspopup="true"
                     onClick={() => setShowProfileMenu(!showProfileMenu)}
                   >
-                    <img
-                      className="h-8 w-8 rounded-full"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                      alt=""
-                    />
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
                   </button>
                 </div>
                 {/*  
@@ -93,7 +78,7 @@ const Nav = () => {
                   To: "transform opacity-0 scale-95"
               */}
                 {showProfileMenu && (
-                  <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
+                  <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
                     <div
                       className="py-1 rounded-md bg-white shadow-xs"
                       role="menu"
@@ -173,7 +158,7 @@ const Nav = () => {
             <Link
               key={link.text}
               to={link.to}
-              className={`block px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:text-white focus:bg-gray-700 ${
+              className={`block px-3 py-2 rounded-md text-sm font-medium ${
                 location.pathname === link.to ? activeClass : inactiveClass
               } ${i > 0 && 'mt-1'}`}
             >
@@ -194,27 +179,27 @@ const Nav = () => {
               <div className="text-base font-medium leading-none text-white">
                 Tom Cook
               </div>
-              <div className="mt-1 text-sm font-medium leading-none text-gray-400">
+              <div className="text-sm font-medium leading-none text-gray-400">
                 tom@example.com
               </div>
             </div>
           </div>
-          <div className="mt-3 px-2">
+          <div className="mt-3 px-2 space-y-1">
             <a
               href="#"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
             >
               Your Profile
             </a>
             <a
               href="#"
-              className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
             >
               Settings
             </a>
             <a
               href="#"
-              className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
             >
               Sign out
             </a>
