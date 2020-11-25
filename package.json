@@ -9,11 +9,16 @@
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "tailwindcss": "^2.0.1-compat"
+    "tailwindcss": "^2.0.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.0.2",
     "cross-env": "^7.0.2",
+    "postcss": "^8.1.10",
     "vite": "^1.0.0-rc.9",
     "vite-plugin-react": "^3.0.2"
+  },
+  "resolutions": {
+    "postcss": "8.1.10"
   }
 }
