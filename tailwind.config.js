@@ -6,7 +6,7 @@ module.exports = {
     safeList: [],
     content: [
       './index.html',
-      './src/**/*.vue',
+      './src/**/*.jsx',
       './src/**/*.js',
     ],
   },
