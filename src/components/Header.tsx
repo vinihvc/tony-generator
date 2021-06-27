@@ -1,6 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-const Header = ({ title }) => {
+interface Props {
+  title: string
+}
+
+const Header: React.FC<Props> = ({ title }) => {
   return (
     <header className="bg-white shadow">
       <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
@@ -12,4 +16,4 @@ const Header = ({ title }) => {
   );
 };
 
-export default Header;
+export default Header

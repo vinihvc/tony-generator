@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 const Nav = () => {
-  const [showProfileMenu, setShowProfileMenu] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
-  const location = useLocation();
+  const [showProfileMenu, setShowProfileMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState(false)
+  const location = useLocation()
 
   const links = [
     { text: 'Home', to: '/' },
     { text: 'About', to: '/about' },
-  ];
+  ]
 
-  const activeClass = 'text-white bg-gray-900';
-  const inactiveClass = 'text-gray-300 hover:text-white hover:bg-gray-700';
+  const activeClass = 'text-white bg-gray-900'
+  const inactiveClass = 'text-gray-300 hover:text-white hover:bg-gray-700'
 
   return (
     <nav className="bg-gray-800">
@@ -210,4 +210,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Nav
