@@ -799,6 +799,11 @@ html-tags@^3.1.0:
   resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-3.1.0.tgz#7b5e6f7e665e9fb41f30007ed9e0d41e97fb2140"
   integrity sha512-1qYz89hW3lFDEazhjW0yVAV87lw8lVkrJocr72XmBkMKsoSVJCQx3W8BXsC7hO2qAt8BoVjYjtAcZ9perqGnNg==
 
+html-to-image@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/html-to-image/-/html-to-image-1.7.0.tgz#4ca93bb90c0b9392edaafbfd5d94e8f0d666e18b"
+  integrity sha512-6egK8mOXMw82nLjj5g3ohERuzrTglgR9+Q6A2cqa7UiuSSKHuFxpABZJSfZztj0EdLC6tAePZJAhjPr4bbU9tw==
+
 import-cwd@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/import-cwd/-/import-cwd-3.0.0.tgz#20845547718015126ea9b3676b7592fb8bd4cf92"
@@ -1457,6 +1462,11 @@ to-regex-range@^5.0.1:
   integrity sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
   dependencies:
     is-number "^7.0.0"
+
+tony-text@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/tony-text/-/tony-text-1.0.0.tgz#40df02f77dd58a38f2795bfea3b974b56c313456"
+  integrity sha512-rTvwTDqQuHKQ4d590fzqXutpiI4e2CWLku99TBjXgawro4sPtaGcsKer/PkjE3SB8HWmuFe0W1bn9WhC8v1whQ==
 
 typescript@^4.3.2:
   version "4.3.4"
