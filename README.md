@@ -1,25 +1,11 @@
-# Vite + React + Tailwind CSS starter
+<h1 align="center">
+    <img src="https://pbs.twimg.com/profile_images/1223242204493361152/JAn-VC65_400x400.jpg" width="100px;" /> <br/>
+		Tony generator
+</h1>
 
-Inspired by [posva's](https://github.com/posva) [vite-tailwind-starter](https://github.com/posva/vite-tailwind-starter)
-
-Note if you have access to [Tailwind UI](https://tailwindui.com), you can follow the following steps to add it:
-
-1. Install `@tailwindcss/ui`:
-
-```sh
-yarn add @tailwindcss/ui
-```
-
-2. Add the plugin in `tailwind.config.js` without changing anything else:
-
-```js
-// tailwind.config.js
-module.exports = {
-  // ...
-  // rest of the config
-  plugins: [require('@tailwindcss/ui')],
-}
-```
+<h4 align="center"> 
+Generate a Twitter message with quote by Tony
+  </h2>
 
 ## Installation
 
