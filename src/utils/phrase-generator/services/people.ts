@@ -1,3 +1,3 @@
-const people = ['Suissa', 'Flori', 'Gui', 'Vini', 'Rafael']
+const people = ['Flori', 'Gui', 'Vini', 'Rafael']
 
 export default people
