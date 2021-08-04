@@ -4,7 +4,7 @@ import { toPng } from 'html-to-image'
 
 import { FiSun, FiMoon } from 'react-icons/fi'
 
-import generate from "../utils/phrase-generator"
+import generate from '../utils/phrase-generator'
 
 import Button from '../components/Button'
 import Input from '../components/Input'

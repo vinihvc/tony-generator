@@ -1,4 +1,4 @@
 const quoteBinder = (author: string) => (quote: string) =>
-  `"${quote}" - ${author}`;
+  `"${quote}" - ${author}`
 
-export default quoteBinder;
+export default quoteBinder

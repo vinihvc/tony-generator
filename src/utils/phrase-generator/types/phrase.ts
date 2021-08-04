@@ -1,3 +1,3 @@
-type PhraseType = [(args: string[]) => string, string[]];
+type PhraseType = [(args: string[]) => string, string[]]
 
-export default PhraseType;
+export default PhraseType

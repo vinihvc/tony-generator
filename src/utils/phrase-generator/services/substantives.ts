@@ -1,3 +1,3 @@
-const substantives = ["Monoid", "imutavel", "React", "daily", "skate"];
+const substantives = ['Monoid', 'imutavel', 'React', 'daily', 'skate']
 
-export default substantives;
+export default substantives

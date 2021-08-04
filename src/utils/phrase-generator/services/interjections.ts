@@ -1,3 +1,3 @@
-const interjections = ["Oloko", "Qualé", "Lek"];
+const interjections = ['Oloko', 'Qualé', 'Lek']
 
-export default interjections;
+export default interjections

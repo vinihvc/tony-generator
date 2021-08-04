@@ -1,3 +1,3 @@
-const adjectives = ["legal", "chato", "pica", "roubo"];
+const adjectives = ['legal', 'chato', 'pica', 'roubo']
 
-export default adjectives;
+export default adjectives
