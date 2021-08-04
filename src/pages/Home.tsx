@@ -11,11 +11,9 @@ const Home = () => {
   const $ref = useRef<HTMLDivElement>(null)
 
   const onButtonClick = useCallback(() => {
-    if ($ref.current === null) {
-      return
-    }
+    if (!$ref.current) return
 
-    toPng($ref.current, {}).then((dataUrl) => {
+    toPng($ref.current).then((dataUrl) => {
       const link = document.createElement('a')
       link.download = 'tony.png'
       link.href = dataUrl
@@ -23,12 +21,16 @@ const Home = () => {
     })
   }, [$ref])
 
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setValue(event.target.value)
+  }
+
   return (
-    <div className="bg-gray-50 dark:bg-black flex items-center justify-center h-screen">
-      <div className="w-11/12 sm:w-full" style={{maxWidth: '650px'}}>
+    <div className="flex justify-center items-center h-screen bg-gray-50 dark:bg-black">
+      <div className="w-11/12 sm:w-full" style={{ maxWidth: '650px' }}>
         <Input
           value={value}
-          onChange={(e: any) => setValue(e.target.value)}
+          onChange={handleChange}
           placeholder="Tony quotes"
         />
 
@@ -36,7 +38,7 @@ const Home = () => {
           <Twitter text={value} className="mt-5" />
         </div>
 
-        <div className="d-flex justify-center items-center mt-5">
+        <div className="flex justify-center items-center mt-5">
           <Button onClick={onButtonClick}>Download</Button>
         </div>
       </div>

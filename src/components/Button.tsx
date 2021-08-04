@@ -8,7 +8,7 @@ const Button = ({ children, ...props }: ButtonProps) => {
   return (
     <button
       type="button"
-      className="mx-auto lg:w-3/5 w-full flex justify-center text-gray-100 p-4 rounded-full tracking-wide font-bold  focus:outline-none focus:shadow-outline hover:bg-twitter-600 shadow-lg bg-twitter-500 cursor-pointer transition ease-in duration-300"
+      className="flex justify-center p-4 mx-auto w-full lg:w-3/5 font-bold tracking-wide text-gray-100 bg-twitter-500 hover:bg-twitter-600 rounded-full shadow-lg transition duration-300 ease-in cursor-pointer focus:outline-none"
       {...props}
     >
       {children}
