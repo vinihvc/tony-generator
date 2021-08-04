@@ -25,7 +25,7 @@ const Home = () => {
 
   return (
     <div className="bg-gray-50 dark:bg-black flex items-center justify-center h-screen">
-      <div>
+      <div className="w-11/12 sm:w-full" style={{maxWidth: '650px'}}>
         <Input
           value={value}
           onChange={(e: any) => setValue(e.target.value)}
