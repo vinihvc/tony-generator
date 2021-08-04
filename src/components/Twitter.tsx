@@ -14,8 +14,7 @@ const Twitter = ({ text, className }: TwitterProps) => {
 
   return (
     <div
-      className={`${className} bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-800 p-4 rounded-xl border max-w-xl`}
-      style={{ minWidth: 600 }}
+      className={`${className} bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-800 p-4 rounded-xl border`}
     >
       <div className="flex justify-between">
         <div className="flex items-center">
