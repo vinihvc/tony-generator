@@ -1,0 +1,1 @@
+const changeCase = t;
