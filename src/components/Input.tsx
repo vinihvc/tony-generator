@@ -8,20 +8,9 @@ const Input = ({ value, ...props }: InputProps) => {
   return (
     <input
       type="text"
-      className="
-      text-sm 
-      sm:text-base
-       relative 
-       w-full border
-        rounded 
-        placeholder-gray-400
-         focus:border-twitter-500 
-         focus:outline-none
-          py-2
-          px-2 
-          "
-      {...props}
+      className="relative py-2 px-2 w-full text-sm sm:text-base placeholder-gray-400 rounded border focus:border-twitter-500 focus:outline-none"
       value={value}
+      {...props}
     />
   )
 }

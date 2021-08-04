@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 
-import Header from './components/Header'
-
 const App = () => {
   return (
     <Router>
