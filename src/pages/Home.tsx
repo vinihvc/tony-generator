@@ -4,6 +4,8 @@ import { toPng } from 'html-to-image'
 
 import { FiSun, FiMoon } from 'react-icons/fi'
 
+import generate from '../utils/phrase-generator'
+
 import Button from '../components/Button'
 import Input from '../components/Input'
 import Twitter from '../components/Twitter'
@@ -42,6 +44,8 @@ const Home = () => {
       link.click()
     })
   }, [$ref])
+
+  const onGeneratePhrase = () => setValue(generate())
 
   const toggleColorMode = useCallback(() => {
     setMode((state) => (state === 'light' ? 'dark' : 'light'))
@@ -89,6 +93,7 @@ const Home = () => {
 
           <div className="flex justify-center items-center mt-5">
             <Button onClick={onButtonClick}>Download</Button>
+            <Button onClick={onGeneratePhrase}>Generate phrase</Button>
           </div>
         </div>
       </div>
