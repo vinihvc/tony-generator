@@ -8,13 +8,13 @@ type BaseLayoutProps = {
 
 const BaseLayout = ({ children }: BaseLayoutProps) => {
   return (
-    <main>
+    <>
       <Toggle />
 
-      <div className="flex justify-center items-center h-screen dark:text-white bg-gray-50 dark:bg-gray-700">
+      <main className="flex justify-center items-center px-2 md:px-0 h-screen dark:text-white bg-gray-50 dark:bg-gray-700">
         {children}
-      </div>
-    </main>
+      </main>
+    </>
   )
 }
 
