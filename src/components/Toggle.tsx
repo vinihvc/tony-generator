@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { FiSun, FiMoon } from 'react-icons/fi'
+
 import useMode from '../hooks/use-mode'
 
 const Toggle = () => {
