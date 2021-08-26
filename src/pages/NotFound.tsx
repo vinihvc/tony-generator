@@ -1,7 +1,13 @@
 import React from 'react'
 
-const NotFound = () => {
-  return <main>Not found</main>
+import BaseLayout from '../layouts/Base'
+
+const NotFoundPage = () => {
+  return (
+    <BaseLayout>
+      <a href="/">Back to home</a>
+    </BaseLayout>
+  )
 }
 
-export default NotFound
+export default NotFoundPage
