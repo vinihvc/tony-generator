@@ -4,7 +4,7 @@ import substantives from '../services/substantives'
 import adjectives from '../services/adjectives'
 
 // Utils
-import randomFromArray from '../utils/randomFromArray'
+import randomFromArray from './randomFromArray'
 
 const types = {
   people: people,
