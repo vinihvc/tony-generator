@@ -44,9 +44,7 @@ const Home = () => {
         </div>
 
         <div className="flex justify-center items-center mt-5">
-          <Button isFullWidth onClick={() => downloadImage($ref)}>
-            Download
-          </Button>
+          <Button onClick={() => downloadImage($ref)}>Download</Button>
         </div>
       </div>
     </BaseLayout>
