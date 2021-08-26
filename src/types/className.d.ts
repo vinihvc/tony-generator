@@ -1,0 +1,1 @@
+type PropsWithClassName<P = unknown> = P & { className?: string }
