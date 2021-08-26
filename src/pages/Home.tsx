@@ -4,8 +4,9 @@ import generate from '../libs/phrase-generator'
 
 import Button from '../components/Button'
 import Input from '../components/Input'
-import Twitter from '../components/Twitter'
 import BaseLayout from '../layouts/Base'
+import TweetCard from '../components/TweetCard'
+
 import downloadImage from '../utils/download-image'
 
 const Home = () => {
@@ -21,7 +22,7 @@ const Home = () => {
 
   return (
     <BaseLayout>
-      <div className="w-11/12 sm:w-full" style={{ maxWidth: '650px' }}>
+      <div className="sm:w-full" style={{ maxWidth: '650px' }}>
         <div className="flex items-center">
           <Input
             value={value}
@@ -31,20 +32,21 @@ const Home = () => {
 
           <div className="mx-3">or</div>
 
-          <button
-            className="py-2 px-5 font-medium text-white bg-twitter-500 hover:bg-twitter-600 rounded-full hover:cursor-pointer"
-            onClick={onGeneratePhrase}
-          >
-            Generate
-          </button>
+          <Button onClick={onGeneratePhrase}>Generate</Button>
         </div>
 
         <div ref={$ref} className="p-1">
-          <Twitter text={value} className="mt-5" />
+          <TweetCard text={value} className="mt-5" />
         </div>
 
         <div className="flex justify-center items-center mt-5">
-          <Button onClick={() => downloadImage($ref)}>Download</Button>
+          <Button
+            size="lg"
+            className="w-full md:w-2/4"
+            onClick={() => downloadImage($ref)}
+          >
+            Download
+          </Button>
         </div>
       </div>
     </BaseLayout>
