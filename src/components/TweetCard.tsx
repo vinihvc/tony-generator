@@ -1,9 +1,11 @@
 import React from 'react'
 
+import clsx from 'clsx'
+
 import tonyText from 'tony-text'
 
-// import TweetImage from './TweetImage'
 import TweetButtons from './TweetButtons'
+// import TweetImage from './TweetImage'
 
 import tony from '../assets/tony.jpg'
 
@@ -14,7 +16,10 @@ type TweetCardProps = {
 const TweetCard = ({ text, className }: PropsWithClassName<TweetCardProps>) => {
   return (
     <article
-      className={`text-gray-600 dark:text-white bg-white dark:bg-gray-800 rounded-xl transition duration-300 ease-in-out ${className}`}
+      className={clsx(
+        'text-gray-600 dark:text-white bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-600 transition duration-300 ease-in-out',
+        className
+      )}
     >
       <div className="flex gap-3 p-5">
         <div className="flex flex-shrink-0 self-start">
@@ -46,7 +51,7 @@ const TweetCard = ({ text, className }: PropsWithClassName<TweetCardProps>) => {
             )}
           </p>
 
-          {/* <TweetImage /> */}
+          {/* <TweetImage className="pt-3" /> */}
 
           <TweetButtons className="mt-4" />
         </div>

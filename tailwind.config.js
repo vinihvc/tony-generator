@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
@@ -5,19 +7,18 @@ module.exports = {
   mode: 'jit',
   purge: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {
-      fontWeight: ['hover', 'focus'],
-      fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans]
-      }
-    },
     colors: {
       ...defaultTheme.colors,
       twitter: {
         500: '#1da1f2',
         600: '#1A91DA'
       },
-      like: '#E0245E'
+      like: {
+        500: '#E0245E'
+      },
+      retweet: {
+        500: '#00ba7c'
+      }
     }
   },
   variants: {},
