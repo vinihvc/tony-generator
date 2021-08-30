@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <BaseLayout>
       <div className="sm:w-full" style={{ maxWidth: '650px' }}>
-        <div className="flex items-center">
+        <div className="flex items-center mb-5">
           <Input
             value={value}
             onChange={handleChange}
@@ -35,8 +35,8 @@ const Home = () => {
           <Button onClick={onGeneratePhrase}>Generate</Button>
         </div>
 
-        <div ref={$ref} className="p-1">
-          <TweetCard text={value} className="mt-5" />
+        <div ref={$ref}>
+          <TweetCard text={value} />
         </div>
 
         <div className="flex justify-center items-center mt-5">
