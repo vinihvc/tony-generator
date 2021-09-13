@@ -8,6 +8,7 @@ import TweetButtons from './TweetButtons'
 // import TweetImage from './TweetImage'
 
 import tony from '../assets/tony.jpg'
+import tagSomeone from '../utils/tag-someone'
 
 type TweetCardProps = {
   text: string
@@ -42,14 +43,12 @@ const TweetCard = ({ text, className }: PropsWithClassName<TweetCardProps>) => {
             </span>
           </div>
 
-          <p className="flex-shrink">
-            {tonyText(
-              `“${
-                text ||
-                'Quem faz código bom é quem não se garante com bug em produção'
-              }”`
-            )}
-          </p>
+          <div
+            className="flex-shrink"
+            dangerouslySetInnerHTML={{
+              __html: tonyText(`“${tagSomeone(text)}”`)
+            }}
+          />
 
           {/* <TweetImage className="pt-3" /> */}
 
