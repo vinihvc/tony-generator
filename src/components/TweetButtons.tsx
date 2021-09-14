@@ -3,6 +3,7 @@ import React from 'react'
 import clsx from 'clsx'
 
 import { Chat, Like, Retweet, Share } from './icons'
+import randomize from '../utils/randomize'
 
 const baseStyle =
   'flex flex-1 text-gray-400 transition duration-300 ease-in-out '
@@ -10,19 +11,19 @@ const baseStyle =
 const TweetButtons = ({ className }: PropsWithClassName) => {
   const buttons = [
     {
-      count: '12.3 k',
+      count: randomize(),
       icon: <Chat />,
       text: 'hover:text-twitter-500',
       bg: 'group-hover:bg-twitter-500'
     },
     {
-      count: '12.3 k',
+      count: randomize(),
       icon: <Retweet />,
       text: 'hover:text-retweet-500',
       bg: 'group-hover:bg-retweet-500'
     },
     {
-      count: '12.3 k',
+      count: randomize(),
       icon: <Like />,
       text: 'hover:text-like-500',
       bg: 'group-hover:bg-like-500'
@@ -54,7 +55,9 @@ const TweetButtons = ({ className }: PropsWithClassName) => {
             </div>
 
             {button.count && (
-              <div className="hidden md:block ml-1 text-xs">{button.count}</div>
+              <div className="hidden md:block ml-1 text-xs">
+                {button.count} k
+              </div>
             )}
           </div>
         </div>
