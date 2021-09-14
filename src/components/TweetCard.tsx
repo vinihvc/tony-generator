@@ -46,13 +46,13 @@ const TweetCard = ({ text, className }: PropsWithClassName<TweetCardProps>) => {
         }}
       />
 
-      <div className="flex items-center my-3 text-sm dark:text-gray-300">
+      <div className="flex items-center my-3 text-sm text-gray-400 dark:text-gray-300">
         <span className="uppercase">{currentTime}</span>
-        <span className="mx-2 w-[2px] h-[2px] bg-gray-400 rounded-full" />
+        <span className="mx-2 w-[2px] h-[2px] bg-gray-400 dark:bg-gray-300 rounded-full" />
         <span> {currentDate}</span>
       </div>
 
-      <hr className="mt-2 mb-1 text-gray-200 dark:text-gray-500" />
+      <hr className="mt-2 mb-1 text-gray-100 dark:text-gray-700" />
 
       {/* <TweetImage className="pt-3" /> */}
 
