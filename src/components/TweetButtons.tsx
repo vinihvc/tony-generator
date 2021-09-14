@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 import clsx from 'clsx'
 
@@ -66,4 +66,4 @@ const TweetButtons = ({ className }: PropsWithClassName) => {
   )
 }
 
-export default TweetButtons
+export default memo(TweetButtons)
