@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 import clsx from 'clsx'
 
@@ -6,7 +6,7 @@ import { Chat, Like, Retweet, Share } from './icons'
 import randomize from '../utils/randomize'
 
 const baseStyle =
-  'flex flex-1 text-gray-400 transition duration-300 ease-in-out '
+  'flex flex-1 text-gray-400 justify-center transition duration-300 ease-in-out '
 
 const TweetButtons = ({ className }: PropsWithClassName) => {
   const buttons = [
@@ -66,4 +66,4 @@ const TweetButtons = ({ className }: PropsWithClassName) => {
   )
 }
 
-export default TweetButtons
+export default memo(TweetButtons)

@@ -30,7 +30,7 @@ const Home = () => {
             placeholder="Tony quotes"
           />
 
-          <div className="mx-3">or</div>
+          <div className="mx-3 text-gray-400 dark:text-gray-200">or</div>
 
           <Button onClick={onGeneratePhrase}>Generate</Button>
         </div>

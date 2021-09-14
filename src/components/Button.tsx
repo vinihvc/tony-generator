@@ -8,7 +8,7 @@ type ButtonProps = {
 } & HTMLAttributes<HTMLButtonElement>
 
 const baseStyle =
-  'flex justify-center items-center font-medium rounded-full transition duration-300 ease-in cursor-pointer focus:outline-none text-white bg-twitter-500 hover:bg-twitter-600'
+  'flex justify-center items-center font-semibold rounded-full transition duration-300 ease-in cursor-pointer focus:outline-none text-white bg-twitter-500 hover:bg-twitter-600'
 
 const sizes = {
   sm: 'px-5 h-8',

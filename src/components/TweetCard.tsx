@@ -4,6 +4,8 @@ import clsx from 'clsx'
 
 import tonyText from 'tony-text'
 
+import { format } from 'date-fns'
+
 import TweetButtons from './TweetButtons'
 // import TweetImage from './TweetImage'
 
@@ -15,46 +17,46 @@ type TweetCardProps = {
 }
 
 const TweetCard = ({ text, className }: PropsWithClassName<TweetCardProps>) => {
+  const currentTime = format(new Date(), "hh:mm aaaaa'm'")
+  const currentDate = format(new Date(), 'MMM dd, yyyy')
+
   return (
     <article
       className={clsx(
-        'text-gray-600 dark:text-white bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-600 transition duration-300 ease-in-out',
+        'p-4 text-gray-600 dark:text-white bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-600 transition duration-300 ease-in-out',
         className
       )}
     >
-      <div className="flex gap-3 p-5">
-        <div className="flex flex-shrink-0 self-start">
-          <img
-            className="w-12 h-12 rounded-full"
-            src={tony}
-            alt="Tony picture"
-          />
-        </div>
+      <div className="flex flex-shrink-0 self-start">
+        <img className="w-12 h-12 rounded-full" src={tony} alt="Tony picture" />
 
-        <div className="w-full">
-          <div className="flex items-center font-medium leading-6">
-            tony
-            <span className="ml-2 text-sm leading-5 text-gray-400 group-hover:text-gray-300 transition duration-150 ease-in-out">
-              @antoniell_
-            </span>
-            <span className="mx-2 w-[1.5px] h-[1.5px] bg-gray-400 rounded-full" />
-            <span className="text-sm leading-5 text-gray-400 group-hover:text-gray-300 transition duration-150 ease-in-out">
-              3h
-            </span>
+        <div className="ml-2">
+          <div className="font-bold ">tony</div>
+
+          <div className="text-sm text-gray-500 dark:text-gray-400">
+            @antoniell_
           </div>
-
-          <div
-            className="flex-shrink"
-            dangerouslySetInnerHTML={{
-              __html: tonyText(`“${tagSomeone(text)}”`)
-            }}
-          />
-
-          {/* <TweetImage className="pt-3" /> */}
-
-          <TweetButtons className="mt-4" />
         </div>
       </div>
+
+      <div
+        className="flex-shrink mt-4 text-lg font-medium"
+        dangerouslySetInnerHTML={{
+          __html: tonyText(`“${tagSomeone(text)}”`)
+        }}
+      />
+
+      <div className="flex items-center my-3 text-sm text-gray-400 dark:text-gray-300">
+        <span className="uppercase">{currentTime}</span>
+        <span className="mx-2 w-[2px] h-[2px] bg-gray-400 dark:bg-gray-300 rounded-full" />
+        <span> {currentDate}</span>
+      </div>
+
+      <hr className="mt-2 mb-1 text-gray-100 dark:text-gray-700" />
+
+      {/* <TweetImage className="pt-3" /> */}
+
+      <TweetButtons />
     </article>
   )
 }
