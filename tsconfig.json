@@ -15,7 +15,6 @@
     "isolatedModules": true,
     "incremental": true,
     "noEmit": true,
-    "types": ["vitest/globals"],
     "jsx": "react-jsx",
     "baseUrl": "./src",
     "paths": {
