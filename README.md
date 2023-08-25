@@ -1,10 +1,10 @@
 <h1 align="center">
-	<img src="https://pbs.twimg.com/profile_images/1223242204493361152/JAn-VC65_400x400.jpg" width="100px;" /> 
+	<img src="https://pbs.twimg.com/profile_images/1485264657069838340/FtPH3XZf_400x400.jpg" width="100px;" />
 	<br/>
 	Tony generator
 </h1>
 
-<h4 align="center"> 
+<h4 align="center">
 	Generate a Twitter message with quote by Tony
 </h4>
 
