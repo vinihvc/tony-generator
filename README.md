@@ -1,7 +1,7 @@
 <h1 align="center">
 	<img src="https://pbs.twimg.com/profile_images/1485264657069838340/FtPH3XZf_400x400.jpg" width="100px;" />
 	<br/>
-	Tony generator
+	Tony Generator
 </h1>
 
 <h4 align="center">
@@ -11,19 +11,19 @@
 ## Installation
 
 ```sh
-yarn
+pnpm
 ```
 
 ## Development
 
 ```sh
-yarn dev
+pnpm dev
 ```
 
 ## Build
 
 ```sh
-yarn build
+pnpm build
 ```
 
 ## Contributions
