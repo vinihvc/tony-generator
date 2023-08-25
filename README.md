@@ -26,13 +26,11 @@ yarn dev
 yarn build
 ```
 
-
-## Contributions 
+## Contributions
 
 <a href="https://github.com/viniciushvc/tony-generator/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=viniciushvc/tony-generator" />
 </a>
-
 
 <br/>
 

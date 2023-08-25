@@ -1,15 +1,13 @@
-import React from 'react'
+import { cn } from '@/utils/cn'
 
-import clsx from 'clsx'
-
-const Share = ({ size = 5, className }: PropsWithClassName<IconProps>) => {
-  const boxSize = size * 4 // tailwind multiple
+export const Share = ({ size = 5, className }: IconProps) => {
+  const boxSize = size * 4
 
   return (
     <svg
       viewBox="0 0 24 24"
       fill="currentColor"
-      className={clsx(className)}
+      className={cn(className)}
       style={{ width: boxSize, height: boxSize }}
     >
       <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path>
@@ -17,5 +15,3 @@ const Share = ({ size = 5, className }: PropsWithClassName<IconProps>) => {
     </svg>
   )
 }
-
-export default Share

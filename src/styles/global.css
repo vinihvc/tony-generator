@@ -3,8 +3,3 @@
 @import 'tailwindcss/components';
 
 @import 'tailwindcss/utilities';
-
-input:checked ~ .dot {
-  transform: translateX(100%);
-  background-color: #141D26;
-}

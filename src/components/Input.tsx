@@ -1,27 +1,18 @@
-import React, { HTMLAttributes } from 'react'
+import { cn } from '@/utils/cn'
+import React from 'react'
 
-import clsx from 'clsx'
+type InputProps = React.InputHTMLAttributes<HTMLInputElement>
 
-type InputProps = {
-  value?: string
-} & HTMLAttributes<HTMLInputElement>
-
-const Input = ({
-  value,
-  className,
-  ...props
-}: PropsWithClassName<InputProps>) => {
+export const Input = (props: InputProps) => {
+  const { className, ...rest } = props
   return (
     <input
       type="text"
-      value={value}
-      className={clsx(
-        'py-2 px-4 w-full text-sm placeholder-gray-400 text-black rounded-full border focus:border-twitter-500 focus:outline-none',
-        className
+      className={cn(
+        'w-full rounded-full bg-transparent border border-neutral-200 dark:border-neutral-800 px-4 h-10 text-sm placeholder:text-neutral-400 focus:outline-none',
+        className,
       )}
-      {...props}
+      {...rest}
     />
   )
 }
-
-export default Input

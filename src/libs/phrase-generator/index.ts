@@ -18,6 +18,6 @@ export default function generate() {
   // Fix format
   return compose(
     interjection ? (v: string) => `${interjection}, ${v}` : (v: string) => v,
-    interjection ? firstLowerCase : firstUpperCase
+    interjection ? firstLowerCase : firstUpperCase,
   )(phrase[0](injectType(phrase[1])))
 }

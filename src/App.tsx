@@ -1,22 +1,19 @@
-import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-
-import Home from './pages/Home'
-import NotFound from './pages/NotFound'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HomePage } from './pages/home'
+import { NotFoundPage } from './pages/not-found'
+import { BaseLayout } from './layouts/base/base'
 
 const App = () => {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<BaseLayout />}>
+          <Route index element={<HomePage />} />
 
-        <Route>
-          <NotFound />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
-      </Switch>
-    </Router>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

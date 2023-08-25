@@ -1,36 +1,29 @@
-import React, { HTMLAttributes } from 'react'
-
-import clsx from 'clsx'
+import { cn } from '@/utils/cn'
+import React from 'react'
 
 type ButtonProps = {
   size?: 'sm' | 'md' | 'lg'
-  children?: React.ReactNode
-} & HTMLAttributes<HTMLButtonElement>
+} & React.ButtonHTMLAttributes<HTMLButtonElement>
 
 const baseStyle =
-  'flex justify-center items-center font-semibold rounded-full transition duration-300 ease-in cursor-pointer focus:outline-none text-white bg-twitter-500 hover:bg-twitter-600'
+  'flex justify-center font-semibold items-center rounded-full transition duration-200 ease-in cursor-pointer focus:outline-none text-white bg-twitter-500 hover:bg-twitter-600'
 
 const sizes = {
   sm: 'px-5 h-8',
   md: 'px-5 h-10 text-sm',
-  lg: 'px-10 h-12'
+  lg: 'px-10 h-12',
 }
 
-const Button = ({
-  size = 'md',
-  className,
-  children,
-  ...props
-}: ButtonProps) => {
+export const Button = (props: ButtonProps) => {
+  const { size = 'md', type = 'submit', className, children, ...rest } = props
+
   return (
     <button
-      type="button"
-      className={clsx(baseStyle, sizes[size], className)}
-      {...props}
+      className={cn(baseStyle, sizes[size], className)}
+      type={type}
+      {...rest}
     >
       {children}
     </button>
   )
 }
-
-export default Button

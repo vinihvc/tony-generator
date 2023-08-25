@@ -10,7 +10,7 @@ const phrases: PhraseType[] = [
 
   [(arg) => `Quero uma talk do ${arg[0]}`, ['people']],
 
-  [(arg) => `${arg[0]} é ${arg[1]}`, ['substantive', 'adjective']]
+  [(arg) => `${arg[0]} é ${arg[1]}`, ['substantive', 'adjective']],
 ]
 
 export default phrases

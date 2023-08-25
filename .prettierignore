@@ -1,0 +1,9 @@
+# npm
+**/node_modules/*
+package.json
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# build
+dist/*
